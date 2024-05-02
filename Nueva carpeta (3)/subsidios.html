@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="subsidios.css">
+    
+  <meta charset="UTF-8">
+  <title>subsidios</title>
+
+</head>
+<body>
+<h2>verificar</h2>
+<p>Viviendas de Montería verifica tus datos para ver si tienes algún tipo de subsidio o verificamos si necesitas uno.</p>
+<form id="contactForm"  method="post">
+  <label for="name">NOMBRES:</label>
+  <input type="text" name="nombre" placeholder="Ingrese sus nombres">
+
+  <label for="apellido">APELLIDOS:</label>
+  <input type="text" name="apellido" placeholder="Ingrese sus apellidos">
+
+  <label for="cedula">CÉDULA:</label>
+  <input type="number"  name="cedula" placeholder="Ingrese su cédula">
+
+  <label for="correo">correo</label>
+  <input type="text" name="correo" placeholder="ingrese su correo electronico">
+  <input type="submit" value="verificar">
+</form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("¡completado!");
+    alert("te enviaremos un correo para la verificaccion");
+    window.location.href = "index.html";// Redirige a la página principal
+  });
+</script>
+
+</body>
+</html>
