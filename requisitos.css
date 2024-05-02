@@ -1,0 +1,72 @@
+/* Estilo para la sección de Requisitos */
+#Requisitos {
+    background-image: url('ruta/de/tu/imagen.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Cubre toda el área del contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    padding: 100px 0; /* Ajusta el espaciado interno */
+    text-align: center; /* Alineación del contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+#Requisitos h2 {
+    font-size: 2.5em; /* Tamaño del texto del título */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+#Requisitos p {
+    font-size: 1.2em; /* Tamaño del texto del párrafo */
+    margin-bottom: 30px; /* Espaciado inferior */
+}
+
+#Requisitos ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0; /* Elimina el espacio interno de la lista */
+}
+
+#Requisitos ul li {
+    margin-bottom: 15px; /* Espaciado inferior entre elementos de la lista */
+    font-size: 1.1em; /* Tamaño del texto de la lista */
+    position: relative; /* Permite alinear el marcador */
+}
+
+#Requisitos ul li::before {
+    content: ""; /* Utiliza un marcador personalizado */
+    position: absolute; /* Posición absoluta con respecto al elemento padre */
+    left: -30px; /* Alinea el marcador a la izquierda del texto */
+    top: 50%; /* Alinea verticalmente el marcador */
+    transform: translateY(-50%); /* Centra verticalmente el marcador */
+    width: 12px; /* Tamaño del marcador */
+    height: 12px; /* Tamaño del marcador */
+    background-color: #f39c12; /* Color del marcador */
+    border-radius: 50%; /* Forma redondeada */
+}
+
+.contenedor img {
+    position: fixed; /* Fija la imagen en la ventana del navegador */
+    top: 0; /* La posiciona en la parte superior */
+    left: 0; /* La posiciona en la parte izquierda */
+    width: 100%; /* La hace ocupar el ancho completo de la pantalla */
+    height: 100%; /* La hace ocupar la altura completa de la pantalla */
+    object-fit: cover; /* Escala la imagen para cubrir todo el área disponible */
+    z-index: -1; /* Coloca la imagen detrás del contenido principal */
+}
+
+/* Estilo para el botón Volver */
+.volver-btn {
+    background-color: #f39c12; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+.volver-btn:hover {
+    background-color: #e67e22; /* Cambia el color de fondo al pasar el cursor */
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}

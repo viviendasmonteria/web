@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="registro.css">
+    
+  <meta charset="UTF-8">
+  <title>registrarse</title>
+
+</head>
+<body>
+
+<h2>registrarse</h2>
+
+<form id="contactForm"  method="post">
+  <label for="name">NOMBRES:</label>
+  <input type="text" name="nombre" placeholder="Ingrese sus nombres">
+
+  <label for="apellido">APELLIDOS:</label>
+  <input type="text" name="apellido" placeholder="Ingrese sus apellidos">
+  
+  <label for="edad">EDAD:</label>
+  <input type="number" name="edad" placeholder="Ingrese su edad">
+
+  <label for="ciudad">CIUDAD:</label>
+  <input type="text"  name="ciudad" placeholder="Ingrese su ciudad">
+
+  <label for="direccion">DIRECCIÓN:</label>
+  <input type="text" name="direccion" placeholder="Ingrese su dirección">
+
+  <label for="cedula">CÉDULA:</label>
+  <input type="number"  name="cedula" placeholder="Ingrese su cédula">
+
+  <input type="submit" value="Enviar">
+</form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("¡Formulario completado!");
+    window.location.href = "index.html"; // Redirige a la página principal
+  });
+</script>
+
+</body>
+</html>

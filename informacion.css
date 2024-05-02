@@ -1,0 +1,138 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+/* Estilos de la navegación */
+nav {
+    background-color: #444;
+    border-bottom: 4px solid #f39c12; /* Cambia el color de la línea inferior de la navegación */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Agrega sombra */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s ease; /* Agrega transición al cambio de color de fondo */
+}
+
+nav ul li a:hover {
+    background-color: #f39c12; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilo para el contenido de las secciones */
+section {
+    padding: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    color: #fff;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+/* Estilo para las secciones con imagen de fondo */
+.seccion-con-fondo {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.benefactor-background {
+    background-image: url('ruta/de/imagen-beneficiario.jpg');
+}
+
+.notaria-background {
+    background-image: url('ruta/de/imagen-notaria.jpg');
+}
+
+.oficina-background {
+    background-image: url('ruta/de/imagen-oficina.jpg');
+}
+
+.noticias-background {
+    background-image: url('ruta/de/imagen-noticias.jpg');
+}
+
+img {
+    position: fixed; /* Fija la imagen en la ventana del navegador */
+    top: 0; /* La posiciona en la parte superior */
+    left: 0; /* La posiciona en la parte izquierda */
+    width: 100%; /* La hace ocupar el ancho completo de la pantalla */
+    height: 100%; /* La hace ocupar la altura completa de la pantalla */
+    object-fit: cover; /* Escala la imagen para cubrir todo el área disponible */
+    z-index: -1; /* Coloca la imagen detrás del contenido principal */
+}
+
+.volver-btn {
+    background-color: #f39c12; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1em; /* Tamaño del texto */
+    border: none; /* Quita el borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+.volver-btn:hover {
+    background-color: #000000; /* Cambia el color de fondo al pasar el cursor */
+}
+a{
+    text-decoration: none;
+    color: #e4e4e4;
+    
+}
